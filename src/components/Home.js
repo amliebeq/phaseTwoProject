@@ -1,13 +1,20 @@
 import React from 'react'
-import Random from './Random'
+import Card from './Card'
 
 
 function Home( { info } ) {
+    const randomNumber=Math.floor(Math.random() * 9)
+    const randomCard= info.filter(card => card.id===randomNumber)
+    let makeRandom=randomCard.map((item) => {
+        return (
+        <Card key={item.id} jargon={item.jargon} definition={item.definition} sentence={item.sentence} image={item.image} id={item.id}/>
+        )
+    })
     
     return (
         <div>
             <h1>Welcome to the home of corporate jargon</h1>
-            <Random info={info}/>
+            <div>{makeRandom}</div>
         </div>
     )
 }
