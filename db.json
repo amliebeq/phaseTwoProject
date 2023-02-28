@@ -1,14 +1,11 @@
 {
-    "tacos": [
+    "doubleSpeak": [
       {
         "id": 1,
-        "title": "Example Article",
-        "content": "This is an example."
-      },
-      {
-        "id": 2,
-        "title": "Second Article",
-        "content": "This is also an example."
+        "jargon": "30,000 foot view",
+        "definition": "Program management view",
+        "sentence": "Let's expand out and see a 30,000 foot view",
+        "image": "https://giphy.com/embed/VbKdpgbOVzJj9RJFOF"
       }
     ]
   }
