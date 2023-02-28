@@ -6,6 +6,69 @@
         "definition": "Program management view",
         "sentence": "Let's expand out and see a 30,000 foot view",
         "image": "https://giphy.com/embed/VbKdpgbOVzJj9RJFOF"
+      },
+      {
+        "id": 2,
+        "jargon": "Boil the ocean",
+        "definition": "Undertake an impossible or impractical task",
+        "sentence": "Let's not try to boil the ocean hear, why don't we dismantle the problem brick by brick",
+        "image": "https://giphy.com/embed/Lba1G7YXujNU6ppbBm"
+      },
+      {
+        "id": 3,
+        "jargon": "Circle back",
+        "definition": "Discuss later",
+        "sentence": "Why don't we circle back to this? I have to go try to boil the ocean.",
+        "image": "https://giphy.com/embed/ryPPUWJDiErmkmjuJB"
+      },
+      {
+        "id": 4,
+        "jargon": "Deep dive",
+        "definition": "Get into the deatil",
+        "sentence": "We did a deep dive into the 30,000 foot view of the project",
+        "image": "https://giphy.com/embed/YMp4isfB2bX5Ppm9Pp"
+      },
+      {
+        "id": 5,
+        "jargon": "Drill down",
+        "definition": "Investigate in depth",
+        "sentence": "How can we drill down further into the color of the button?",
+        "image": "https://giphy.com/embed/eP0rq0MpopIa2tozVQ"
+      },
+      {
+        "id": 6,
+        "jargon": "Flogging a dead horse",
+        "definition": "Wasting efforts",
+        "sentence": "Please stop floggin a dead horse and move on to an alive horse.",
+        "image": "https://giphy.com/embed/wSU1U3h1PFFsc"
+      },
+      {
+        "id": 7,
+        "jargon": "Move the goal posts",
+        "definition": "Change the criteria for success",
+        "sentence": "They changed the goal posts and now I can't hit target",
+        "image": "https://giphy.com/embed/3ohs84rY3xNvSgsQeI"
+      },
+      {
+        "id": 8,
+        "jargon": "Pick the low-hanging fruit",
+        "definition": "Go for the easiest option",
+        "sentence": "Go ahead and go for the low hanging fruit, then we will figure out the big picture.",
+        "image": "https://giphy.com/embed/xUOrvZIu7C0YK7JV3q"
+      },
+      {
+        "id": 9,
+        "jargon": "Put this on your radar",
+        "definition": "Consider this",
+        "sentence": "Can you please put the deep dive on your radar so we can circle back?",
+        "image": "https://giphy.com/embed/6ahZf0o1e4K7EquZkp"
+      },
+      {
+        "id": 10,
+        "jargon": "Table the conversation",
+        "definition": "Reconvene at a later time",
+        "sentence": "Please table this conversation so we can move onto the synergy.",
+        "image": "https://giphy.com/embed/6lScd4x2D5Oko"
       }
     ]
   }

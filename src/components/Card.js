@@ -1,12 +1,12 @@
 import React from 'react'
 
-function Card({ jargon, definition, sentence, image }) {
+function Card({ jargon, definition, sentence, image, id }) {
     return (
-        <div id='jargon-card'>
-            <h3>{jargon}</h3>
-            <p>{definition}</p>
-            <p>{sentence}</p>
-            <iframe src={image} height='240' width='240' frameBorder='0'></iframe>
+        <div key={id}>
+            <h3 key={jargon}>{jargon}</h3>
+            <p key={definition}>{definition}</p>
+            <p key={sentence}>{sentence}</p>
+            <iframe key={image} src={image} height='240' width='240' frameBorder='0'></iframe>
         </div>
     )
 }

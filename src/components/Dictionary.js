@@ -4,7 +4,7 @@ import Card from './Card'
 function Dictionary({ info }) {
     const makeList= info.map((item) => {
         return(
-            <Card jargon={item.jargon} definition={item.definition} sentence={item.sentence} image={item.image} />
+            <Card key={item.id} jargon={item.jargon} definition={item.definition} sentence={item.sentence} image={item.image} id={item.id}/>
         )
     })
 
