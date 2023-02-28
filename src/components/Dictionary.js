@@ -11,7 +11,7 @@ function Dictionary({ info }) {
     return (
         <div id='items'>
             <h1>Master corporate jargon dictionary</h1>
-            <div id='item list'>
+            <div id='item list' className='row'>
                 {makeList}
             </div>
         </div>
