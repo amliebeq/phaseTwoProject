@@ -19,11 +19,11 @@ function App() {
         <div>
             <NavBar />
             <Switch>
+                <Route exact path='/'>
+                    <Home info={info}/>
+                </Route>
                 <Route exact path='/dictionary'>
                     <Dictionary info={info}/>
-                </Route>
-                <Route exact path='/'>
-                    <Home />
                 </Route>
                 <Route exact path='/add-new'>
                     <Form />

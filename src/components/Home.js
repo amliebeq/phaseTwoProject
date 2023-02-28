@@ -1,8 +1,14 @@
 import React from 'react'
+import Random from './Random'
 
-function Home() {
+
+function Home( { info } ) {
+    
     return (
-        <div>Hi!</div>
+        <div>
+            <h1>Welcome to the home of corporate jargon</h1>
+            <Random info={info}/>
+        </div>
     )
 }
 
