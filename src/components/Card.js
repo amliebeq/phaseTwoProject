@@ -6,7 +6,7 @@ function Card({ jargon, definition, sentence, image }) {
             <h3>{jargon}</h3>
             <p>{definition}</p>
             <p>{sentence}</p>
-            <iframe src={image}></iframe>
+            <iframe src={image} height='240' width='240' frameBorder='0'></iframe>
         </div>
     )
 }

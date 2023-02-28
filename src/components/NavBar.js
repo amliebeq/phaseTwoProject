@@ -5,9 +5,19 @@ function NavBar() {
     return (
         <div>
             <NavLink
+            to='/'
+            exact>
+                Home
+            </NavLink>
+            <NavLink
             to='/dictionary'
             exact>
                 Dictionary
+            </NavLink>
+            <NavLink
+            to='/add-new'
+            exact>
+                Add a New Term
             </NavLink>
         </div>
     )

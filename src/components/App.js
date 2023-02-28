@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import { Route, Switch } from 'react-router-dom'
-import List from './List'
+import Dictionary from './Dictionary'
 import NavBar from './NavBar'
+import Home from './Home'
+import Form from './Form'
+
 
 function App() {
     const [info, setInfo] = useState([])
@@ -17,7 +20,13 @@ function App() {
             <NavBar />
             <Switch>
                 <Route exact path='/dictionary'>
-                    <List info={info}/>
+                    <Dictionary info={info}/>
+                </Route>
+                <Route exact path='/'>
+                    <Home />
+                </Route>
+                <Route exact path='/add-new'>
+                    <Form />
                 </Route>
             </Switch>
         </div>
