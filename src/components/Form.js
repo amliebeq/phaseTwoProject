@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
+import { useHistory } from 'react-router-dom'
 
 function Form() {
+    const history=useHistory()
     const [jargon, setJargon] = useState('')
     const [definition, setDefinition] = useState('')
     const [sentence, setSentence] = useState('')
@@ -23,7 +25,6 @@ function Form() {
     }
 
     function handleSubmit(e) {
-        e.preventDefault()
         const data = {
             jargon: jargon,
             definition: definition,
@@ -43,6 +44,7 @@ function Form() {
         setDefinition('')
         setSentence('')
         setImage('')
+        history.push('/dictionary')
     }
 
     return (
