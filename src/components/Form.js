@@ -49,7 +49,7 @@ function Form() {
 
     return (
         <div>
-            <h1>Add you new term here</h1>
+            <h1>Add your new term here</h1>
             <form onSubmit={handleSubmit}>
                 <label>Doublespeak Phrase</label>
                 <input type='text' value={jargon} onChange={handleJargonChange}/>
