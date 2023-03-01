@@ -45,7 +45,7 @@ function App() {
             body: JSON.stringify(data),
         })
         .then ((r) => r.json())
-        .then((newItem) => console.log(newItem))
+        .then((newItem) => setInfo([...info, newItem]))
         setJargon('')
         setDefinition('')
         setSentence('')
