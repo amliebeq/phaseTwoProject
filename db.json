@@ -83,6 +83,13 @@
       "sentence": "Leadership decided to trim the fat, so I'm looking for a new job",
       "image": "https://giphy.com/embed/l2QEf3sxY1cronAze",
       "id": 11
+    },
+    {
+      "jargon": "1",
+      "definition": "2",
+      "sentence": "3",
+      "image": "4",
+      "id": 12
     }
   ]
 }

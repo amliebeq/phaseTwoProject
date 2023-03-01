@@ -1,10 +1,10 @@
 import React from 'react'
 import Card from './Card'
 
-function Dictionary({ info }) {
-    const makeList= info.map((item) => {
+function Dictionary({ sayingObj }) {
+    const makeList= sayingObj.map((saying) => {
         return(
-            <Card key={item.id} jargon={item.jargon} definition={item.definition} sentence={item.sentence} image={item.image} id={item.id}/>
+            <Card key={saying.id} jargon={saying.jargon} definition={saying.definition} sentence={saying.sentence} image={saying.image} id={saying.id}/>
         )
     })
 
