@@ -39,6 +39,10 @@ function Form() {
         })
         .then ((r) => r.json())
         .then((newItem) => console.log(newItem))
+        setJargon('')
+        setDefinition('')
+        setSentence('')
+        setImage('')
     }
 
     return (

@@ -39,7 +39,7 @@
       "id": 6,
       "jargon": "Flogging a dead horse",
       "definition": "Wasting efforts",
-      "sentence": "Please stop floggin a dead horse and move on to an alive horse.",
+      "sentence": "Please stop flogging a dead horse and move on to an alive horse.",
       "image": "https://giphy.com/embed/wSU1U3h1PFFsc"
     },
     {
@@ -62,20 +62,6 @@
       "definition": "Consider this",
       "sentence": "Can you please put the deep dive on your radar so we can circle back?",
       "image": "https://giphy.com/embed/6ahZf0o1e4K7EquZkp"
-    },
-    {
-      "id": 0,
-      "jargon": "Table the conversation",
-      "definition": "Reconvene at a later time",
-      "sentence": "Please table this conversation so we can move onto the synergy.",
-      "image": "https://giphy.com/embed/6lScd4x2D5Oko"
-    },
-    {
-      "jargon": "1",
-      "definition": "2",
-      "sentence": "3",
-      "image": "https://giphy.com/embed/3ohfFu3thCfupYwftu",
-      "id": 10
     }
   ]
 }
