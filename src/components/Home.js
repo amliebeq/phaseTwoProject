@@ -3,7 +3,7 @@ import Card from './Card'
 
 
 function Home( { info } ) {
-    const randomNumber=Math.floor(Math.random() * 9)
+    const randomNumber=Math.floor(Math.random() * info.length)
     const randomCard= info.filter(card => card.id===randomNumber)
     let makeRandom=randomCard.map((item) => {
         return (
