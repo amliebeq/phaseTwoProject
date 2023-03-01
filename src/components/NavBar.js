@@ -1,44 +1,52 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
-const linkStyles = {
-    display: "inline-block",
-    width: "auto",
-    padding: "12px",
-    margin: "0 6px 6px",
-    background: "blue",
-    textDecoration: "none",
-    color: "white",
-  }
+const navLinkStyling = {
+    color: '#fff',
+    textDecoration: 'none',
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
+    transition: 'all 0.3s ease'
+}
 
-const center = {
+const navBarStyling = {
+    backgroundColor: '#5F6860',
+    color: '#fff',
     display: 'flex',
+    justifyContent: 'space-between',
     alignItems: 'center',
-    justifyContent: 'center',
+    padding: '20px'
+}
+
+const activeLinkStyling = {
+    color: '#FFA500'
 }  
 
 function NavBar() {
     return (
-        <div style={center}>
+        <nav style={navBarStyling}>
             <NavLink
             to='/'
             exact
-            style={linkStyles}>
+            style={navLinkStyling}
+            activeStyle={activeLinkStyling}>
                 Home
             </NavLink>
             <NavLink
             to='/dictionary'
             exact
-            style={linkStyles}>
+            style={navLinkStyling}
+            activeStyle={activeLinkStyling}>
                 Dictionary
             </NavLink>
             <NavLink
             to='/add-new'
             exact
-            style={linkStyles}>
+            style={navLinkStyling}
+            activeStyle={activeLinkStyling}>
                 Add a New Term
             </NavLink>
-        </div>
+        </nav>
     )
 }
 

@@ -14,7 +14,7 @@ function Home( { info } ) {
     return (
         <div>
             <h1>Welcome to the home of corporate jargon</h1>
-            <div>{makeRandom}</div>
+            <div className='randomCard'>{makeRandom}</div>
         </div>
     )
 }
