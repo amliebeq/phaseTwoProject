@@ -76,6 +76,13 @@
       "sentence": "My manager wants to circle back and touch base offline.",
       "image": "https://giphy.com/embed/uJX7gunVyKbkEI2zAl",
       "id": 10
+    },
+    {
+      "jargon": "Trim the fat",
+      "definition": "Cut excess budgets, remove avoidable costs",
+      "sentence": "Leadership decided to trim the fat, so I'm looking for a new job",
+      "image": "https://giphy.com/embed/l2QEf3sxY1cronAze",
+      "id": 11
     }
   ]
 }

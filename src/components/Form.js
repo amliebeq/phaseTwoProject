@@ -1,51 +1,6 @@
-import React, { useState } from 'react'
-import { useHistory } from 'react-router-dom'
+import React from 'react'
 
-function Form() {
-    const history=useHistory()
-    const [jargon, setJargon] = useState('')
-    const [definition, setDefinition] = useState('')
-    const [sentence, setSentence] = useState('')
-    const [image, setImage] = useState('')
-
-    function handleJargonChange(e) {
-        setJargon(e.target.value)
-    }
-
-    function handleDefinitionChange(e) {
-        setDefinition(e.target.value)
-    }
-
-    function handleSentenceChange(e) {
-        setSentence(e.target.value)
-    }
-
-    function handleImageChange(e) {
-        setImage(e.target.value)
-    }
-
-    function handleSubmit(e) {
-        const data = {
-            jargon: jargon,
-            definition: definition,
-            sentence: sentence,
-            image: image,
-        }
-        fetch('http://localhost:4000/doubleSpeak', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(data),
-        })
-        .then ((r) => r.json())
-        .then((newItem) => console.log(newItem))
-        setJargon('')
-        setDefinition('')
-        setSentence('')
-        setImage('')
-        history.push('/dictionary')
-    }
+function Form({ jargon, definition, sentence, image, handleJargonChange, handleDefinitionChange, handleSentenceChange, handleImageChange, handleSubmit }) {
 
     return (
         <div>
