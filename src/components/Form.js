@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import {useHistory} from 'react-router-dom'
 
-function Form({sayingObj, setsayingObj}) {
+function Form({sayingObjs, setsayingObjs}) {
     const history=useHistory()
     const [jargon, setJargon] = useState('')
     const [definition, setDefinition] = useState('')
@@ -40,7 +40,7 @@ function Form({sayingObj, setsayingObj}) {
             body: JSON.stringify(data),
         })
         .then ((r) => r.json())
-        .then((newItem) => setsayingObj([...sayingObj, newItem]))
+        .then((newItem) => setsayingObjs([...sayingObjs, newItem]))
         setJargon('')
         setDefinition('')
         setSentence('')

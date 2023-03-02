@@ -2,19 +2,20 @@ import React from 'react'
 import Card from './Card'
 
 
-function Home( { sayingObj } ) {
-    const randomNumber=Math.floor(Math.random() * sayingObj.length)
-    const randomCard= sayingObj.filter(card => card.id===randomNumber)
-    let makeRandom=randomCard.map((item) => {
-        return (
-        <Card key={item.id} jargon={item.jargon} definition={item.definition} sentence={item.sentence} image={item.image} id={item.id}/>
-        )
-    })
+function Home( { sayingObjs } ) {
+    const randomNumber=Math.floor(Math.random() * sayingObjs.length)
+    const randomCard= sayingObjs.find(card => card.id===randomNumber)
+
+    if (!randomCard) {
+        return <h2>Loading...</h2>
+    }
     
     return (
         <div>
             <h1>Welcome to the home of corporate jargon</h1>
-            <div className='randomCard'>{makeRandom}</div>
+            <div className='randomCard' >
+            <Card key={randomCard.id} jargon={randomCard.jargon} definition={randomCard.definition} sentence={randomCard.sentence} image={randomCard.image} id={randomCard.id}/>
+            </div>
         </div>
     )
 }

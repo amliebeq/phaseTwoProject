@@ -7,12 +7,12 @@ import Form from './Form'
 
 
 function App() {
-    const [sayingObj, setsayingObj] = useState([])
+    const [sayingObjs, setsayingObjs] = useState([])
 
     useEffect(() => {
         fetch('http://localhost:4000/doubleSpeak')
             .then((r)=>r.json())
-            .then((data)=>setsayingObj(data))
+            .then((data)=>setsayingObjs(data))
     }, [])
 
     return(
@@ -20,13 +20,13 @@ function App() {
             <NavBar />
             <Switch>
                 <Route exact path='/'>
-                    <Home sayingObj={sayingObj}/>
+                    <Home sayingObjs={sayingObjs}/>
                 </Route>
                 <Route exact path='/dictionary'>
-                    <Dictionary sayingObj={sayingObj}/>
+                    <Dictionary sayingObjs={sayingObjs}/>
                 </Route>
                 <Route exact path='/add-new'>
-                    <Form setsayingObj={setsayingObj} sayingObj={sayingObj} />
+                    <Form setsayingObj={setsayingObjs} sayingObj={sayingObjs} />
                 </Route>
             </Switch>
         </div>
