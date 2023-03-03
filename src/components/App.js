@@ -15,8 +15,6 @@ function App() {
             .then((data)=>setsayingObjs(data))
     }, [])
 
-    console.log(sayingObjs)
-
     return(
         <div>
             <NavBar />
