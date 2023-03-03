@@ -15,6 +15,8 @@ function App() {
             .then((data)=>setsayingObjs(data))
     }, [])
 
+    console.log(sayingObjs)
+
     return(
         <div>
             <NavBar />
@@ -26,7 +28,7 @@ function App() {
                     <Dictionary sayingObjs={sayingObjs}/>
                 </Route>
                 <Route exact path='/add-new'>
-                    <Form setsayingObj={setsayingObjs} sayingObj={sayingObjs} />
+                    <Form setsayingObjs={setsayingObjs} sayingObjs={sayingObjs} />
                 </Route>
             </Switch>
         </div>

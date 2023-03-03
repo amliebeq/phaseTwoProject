@@ -48,6 +48,8 @@ function Form({sayingObjs, setsayingObjs}) {
         history.push('/dictionary')
     }
 
+    console.log(sayingObjs)
+
     return (
         <div>
             <h1>Add your new term here</h1>
