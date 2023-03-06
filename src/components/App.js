@@ -6,13 +6,14 @@ import Home from './Home'
 import Form from './Form'
 
 
+
 function App() {
-    const [sayingObjs, setsayingObjs] = useState([])
+    const [sayingObjs, setSayingObjs] = useState([])
 
     useEffect(() => {
         fetch('http://localhost:4000/doubleSpeak')
             .then((r)=>r.json())
-            .then((data)=>setsayingObjs(data))
+            .then((data)=>setSayingObjs(data))
     }, [])
 
     return(
@@ -26,7 +27,7 @@ function App() {
                     <Dictionary sayingObjs={sayingObjs}/>
                 </Route>
                 <Route exact path='/add-new'>
-                    <Form setsayingObjs={setsayingObjs} sayingObjs={sayingObjs} />
+                    <Form setsayingObjs={setSayingObjs} sayingObjs={sayingObjs} />
                 </Route>
             </Switch>
         </div>
