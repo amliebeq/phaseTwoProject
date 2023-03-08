@@ -5,8 +5,6 @@ import NavBar from './NavBar'
 import Home from './Home'
 import Form from './Form'
 
-
-
 function App() {
     const [sayingObjs, setSayingObjs] = useState([])
 
